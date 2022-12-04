@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --main:linear-gradient(to right, #eb3349, #f45c43);
+  --mainSingle:#eb3349;
+  --tag:rgb(255, 255, 42);
+  --dead:gray;
+  --click:#f45c43;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
+
+.header{
+  width: 100%;
+  background-color: var(--mainSingle);
+  background: var(--main);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+}
+
+.header-logo{
+  font-size: 2rem;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 9em;
+  padding-left: 6em;
+}
+
+.image{
+  width: 378px;
+  height: 378px;
+}
+
+.container{
+  margin-left: 3%;
+  width: 100%;
+  display: block;
+}
+
+.type{
+  font-size: 17px;
+  border: 4px solid var(--tag);
+  border-radius: 9%;
+  padding: 7px;
+  position: absolute;
+}
+
+.title{
+  margin-left: 3em;
+  font-size:45px;
+}
+
+.date{
+  font-size: 16px;
+  color: var(--dead);
+}
+
+.des{
+  font-size: 24px;
+}
+
+.more{
+  width: 70%;
+  padding: 19px;
+  font-size: 18px;
+  border: none;
+  background:var(--main);
+  color: azure;
+}
+
+.more:hover{
+  background: var(--click);
+}
+
+
+
+
+
